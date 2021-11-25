@@ -1,14 +1,20 @@
-﻿#include <stdio.h>
-int main()
-{
-	int  z, x, c, v;
-   	printf("Enter chislo v mm:");
-	scanf_s("%d", &x);
-	z = x / 1000;
-	printf("m:%d\n", z);
-	c = x / 10;
-	printf("cm:%d\n", c);
-	printf("mm:%d", x);
+#include <stdio.h>
+#include <iostream>
+using namespace std;
 
-	return 0;
+int main ()
+{
+    int N;
+    cout << "N="; cin >> N;
+    int* arr = new int[N];
+    cout << "ВВедите числа" << (N) << ":\n";
+    for (int i = 0; i < N; i++)
+        cin >> arr[i];
+    int   k , a = N / 2;
+    if (N%2) k = a + 1;
+    else       k = a;
+    
+    
+    
+
 }
